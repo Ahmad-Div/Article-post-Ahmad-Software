@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Bitter&family=Fira+Sans:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inconsolata:wght@600&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Lobster&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&family=Rubik:wght@400;500;700&display=swap');
+
+
+/* general style */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 46%, 95%);
+}
+
+h1 {
+    font-size: 100%;
+}
+
+p {
+    font-size: 0.8rem;
+    color: hsl(212, 23%, 69%);
+}
+
+h2 {
+    font-size: 0.9rem;
+}
+
+
+
+/* main section style */
+
+
+.main-section {
+    padding: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+    min-width: 20rem;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.7s ease;
+    height: 100%;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.img-div {
+    width: 28%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.img-div img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+}
+
+
+
+
+.card-content {
+    width: 68%;
+    min-width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    padding: 3%;
+}
+
+
+.card-header {
+    line-height: 1.5rem;
+}
+
+.profile-line {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    width: 70%;
+}
+
+#pro-img-div {
+    width: 10%;
+    padding-top: 6%;
+    margin-right: 6%;
+}
+
+#pro-img-div img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#profile-text h2 {
+    margin-bottom: 0;
+}
+
+#share-button {
+    margin-top: 6%;
+    margin-right: 6%;
+    position: relative;
+}
+
+#share-button-img {
+    cursor: pointer;
+    color: hsl(214, 17%, 51%);
+    background-color: hsl(214, 47%, 87%);
+    padding: 50%;
+    border-radius: 30px;
+    transition: 0.7s ease;
+}
+
+
+
+
+
+.hidden-share-bar {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+    background-color: hsl(217, 19%, 35%);
+    width: 12rem;
+    border-radius: 20px;
+    top: -140%;
+    left: -550%;
+}
+
+.social-media-share {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.social-media-share img {
+    width: 1rem;
+    height: 1rem;
+    margin: 20%;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.social-media-share img:hover {
+    transform: scale(1.1);
+}
+
+.hidden-share-bar p {
+    margin-left: 10%;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.hidden-share-bar p:hover {
+    color: aqua;
+}
+
+
+#little-in-bottom {
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    width: 1rem;
+    height: 1rem;
+    bottom: -18%;
+    margin-left: 45%;
+    transform: rotate(45deg);
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* script stuff */
+
+
+.hide-share-bar {
+    display: none;
+}
+
+.apear-share-bar {
+    display: flex;
+}
+
+
+
+
+
+@media(max-width:910px) {
+    .card-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .img-div {
+        width: 100%;
+        height: 20%;
+        min-width: 5rem;
+    }
+
+    .img-div img {
+        width: 100%;
+        border-top-left-radius: 20px;
+
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+    }
+
+    .card-content {
+        min-width: 5rem;
+    }
+
+    .hidden-share-bar {
+        left: -1050%;
+    }
+
+    #little-in-bottom {
+        bottom: -14%;
+        margin-left: 85%;
+    }
+
+}
